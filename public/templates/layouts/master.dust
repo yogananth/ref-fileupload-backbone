@@ -6,9 +6,23 @@
     <link rel="stylesheet" href="/css/app.css" />
 </head>
 <body>
-<div id="wrapper" class="content">
-    {+body /}
-</div>
-<script data-main="/js/app" src="/components/requirejs/require.js"></script>
+
+
+    {! BEGIN: Page Header !}
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Ref: File Upload - using Backbone.js</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="pageContainer" class="container">
+        <div id="dynaSection">
+            {+body /}
+        </div>
+    </section>
+
+    <script data-main="/js/app" src="/components/requirejs/require.js"></script>
 </body>
 </html>

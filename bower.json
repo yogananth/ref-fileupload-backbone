@@ -1,0 +1,30 @@
+{
+  "name": "FileUpload_Backbone",
+  "main": "public/js/app.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/yogananth/ref-fileupload-backbone",
+  "authors": [
+    "Yogananth <yogananth.p@gmail.com>"
+  ],
+  "description": "Reference application using Backbone.js for File Upload function",
+  "keywords": [
+    "backbone",
+    "file-upload"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dustjs-linkedin-helpers": "~1.2.0",
+    "dustjs-linkedin": "~2.3.0",
+    "requirejs": "^2.1.11",
+    "bootstrap": "~3.3.4"
+  }
+}
