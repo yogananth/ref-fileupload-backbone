@@ -1,0 +1,21 @@
+{>"layouts/master" /}
+
+{<body}
+    <h2>{@pre type="content" key="title"/}</h2>
+    <div id="importPanel" class="widget">
+        <form id="import" name="importForm" enctype="multipart/form-data" method="post" action="/import">
+
+            <input type="hidden" name="_csrf" value="{_csrf}">
+
+            <div id="fileSelection" class="col-sm-5 col-md-5 jumbotron">
+                <input type="file" name="inFiles" multiple="multiple" />
+            </div>
+            
+            <div class="clearfix"></div>
+
+            <div>
+                <input type="submit" class="btn btn-primary" value="{@pre type="content" key="button.upload" /} " />
+            </div>
+        </form>
+    </div>
+{/body}

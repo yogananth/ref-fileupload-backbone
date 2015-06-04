@@ -1,5 +1,19 @@
 {>"layouts/master" /}
 
 {<body}
-    <h1>{@pre type="content" key="greeting"/}</h1>
+
+    {! Page level System Message !}
+
+    {?result.alert}
+        <div class="alert alert-{?result._ok}success{:else}danger{/result._ok}">
+            {@pre type="content" key="alert.message" /}
+        </div>
+    {/result.alert}
+
+
+    <h2>{@pre type="content" key="title"/}</h2>
+
+    {>"partials/import-widget" /}
+
+
 {/body}
