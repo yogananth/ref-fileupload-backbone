@@ -14,7 +14,7 @@ module.exports = function (router) {
     });
 
     router.get('/about', function(req, res) {
-        res.render('about');
+        res.render('about', {layout: 'layouts/master'});
     });
 
 

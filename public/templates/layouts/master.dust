@@ -24,7 +24,11 @@
 
     <section id="pageContainer" class="container">
         <div id="dynaSection">
-            {+body /}
+            {?_main}
+                {>"{_main}" /}
+            {:else}
+                {+body /}
+            {/_main}
         </div>
     </section>
 
