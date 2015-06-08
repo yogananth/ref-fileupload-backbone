@@ -9,10 +9,17 @@ module.exports = function (router) {
     var model = new IndexModel();
 
 
-    router.get('/', function (req, res) {
+    router.get('/', function(req, res) {
+        res.redirect('/import');
+    });
 
+    router.get('/about', function(req, res) {
+        res.render('about');
+    });
+
+
+    router.get('/import', function (req, res) {
         res.render('index', model);
-
     });
 
 
