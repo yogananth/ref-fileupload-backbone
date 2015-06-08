@@ -16,7 +16,7 @@
             </div>
             <nav class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/about">About</a></li>
+                    <li><a href="/about" data-client-route="true">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,7 +30,7 @@
 
     <footer class="footer">
         <div class="container">
-            <h5><a href="/about">About</a></h5>
+            <h5><a href="/about" data-client-route="true">About</a></h5>
         </div>
     </section>
 

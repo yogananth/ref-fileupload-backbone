@@ -1,9 +1,4 @@
-{>"layouts/master" /}
-
-{<body}
 
     <h2>{@pre type="content" key="title"/}</h2>
 
     <p>{@pre type="content" key="about-content"/}</p>
-
-{/body}
